@@ -1,0 +1,88 @@
+.footer {
+  width: 100vw;
+  background: #f9f9f9; /* gris oscuro elegante */
+  color: #00008B;      /* texto claro */
+   padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: #00008B;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-family: 'Arial', ArialHebrew-Light;
+}
+
+
+.footer-links a:hover {
+    transform: translateY(-10px); /* se eleva ligeramente */
+  background: hsla(241, 196, 15, 0.8); /* se hace más opaco */
+  
+  color: #3b82f6; /* azul al pasar el mouse */
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-icons a{
+ align-items: center;
+ color: #00008B;
+ font-family: 'Arial', ArialHebrew-Light;
+}
+
+.footer-icons a:hover {
+  transform: translateY(-5px); /* se eleva ligeramente */
+  background: hsla(241, 196, 15, 0.8); /* se hace más opaco */
+  
+  color: #3b82f6; /* azul al pasar el mouse */
+}
+
+.logo-img {
+  width: 140px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+
+.footer-icons .icon {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s;
+}
+
+.footer-icons .icon:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  font-size: 0.7rem;
+  color: #9ca3af;
+}
+
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-icons {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

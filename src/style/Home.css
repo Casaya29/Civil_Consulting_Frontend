@@ -1,0 +1,359 @@
+/* ===== RESET GENERAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden; /* evita scroll horizontal (barras negras) */
+  background: #fff;
+  scroll-behavior: smooth;
+}
+
+.fixed-container {
+  position: fixed;
+  top: 480px;          /* distancia desde arriba de la pantalla */
+  right: 20px;        /* distancia desde la derecha */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;          /* espacio entre botón y Translations */
+  z-index: 1000;
+}
+
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.contenedor-principal {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 ;
+}
+
+/* ===== INICIO ===== */
+.inicio {
+  width: 100%; /* antes: 100vw */
+  padding: 2rem;
+  box-sizing: border-box;
+  background-image: url("../assets/inicio.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.inicio-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+  color: white;
+  text-align: center;
+  font-family: 'Arial', ArialHebrew-Light;
+}
+
+.inicio-content:hover {
+  transform: translateY(-5px); /* se eleva ligeramente */
+  background: hsla(241, 196, 15, 0.8); /* se hace más opaco */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* agrega sombra */
+}
+
+main,
+section:first-of-type {
+  padding-top: 100px; /* separa del navbar fijo */
+}
+
+/* ===== NOSOTROS ===== */
+.nosotros {
+  padding: 2rem;
+  background: #F6F5F2;
+  text-align: center;
+  width: 100%; /* antes: 100vw */
+  box-sizing: border-box;
+}
+
+.nosotros h2 {
+  font-family: 'Arial', ArialHebrew-bold;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #000;
+}
+
+.nosotros p {
+  max-width: 800px;
+  margin: auto;
+  color: #00008B;
+  font-family: 'Arial', ArialHebrew-Light;
+}
+
+.nosotros blockquote {
+  margin-top: 20px;
+  font-style: italic;
+  color: #00008B;
+  border-left: 4px solid #f1c40f;
+  background: hsla(62, 100%, 62%, 0.5);
+  padding-left: 15px;
+ transform: translateY(0px); 
+}
+
+.nosotros blockquote:hover {
+  transform: translateY(-5px); /* se eleva ligeramente */
+  background: hsla(241, 196, 15, 0.8); /* se hace más opaco */
+  
+}
+
+/* ===== SERVICIOS ===== */
+.servicios {
+  padding: 2rem;
+  text-align: center;
+  background-color: #F6F5F2;
+  width: 100%; /* antes: 100vw */
+  box-sizing: border-box;
+}
+
+.servicios h2 {
+  font-family: 'Arial', ArialHebrew-bold;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.servicios-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  color: #00008B;
+  font-family: 'Arial', ArialHebrew-Light;
+}
+
+.servicios-grid .card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform .2s;
+}
+
+.servicios-grid .card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== MISIÓN Y VISIÓN ===== */
+.myv {
+  padding: 2rem;
+  text-align: center;
+  background: #F6F5F2;
+  width: 100%; /* antes: 100vw */
+  box-sizing: border-box;
+}
+
+.myv h2 {
+  font-family: 'Arial', ArialHebrew-bold;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.mision-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  font-family: 'Arial', ArialHebrew-Light;
+}
+
+.mision-grid .card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #00008B;
+  transition: transform .2s;
+}
+
+.mision-grid .card:hover {
+  transform: translateY(-5px);
+}
+
+.mision-grid .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* ===== CONTACTO ===== */
+.contactanos {
+  padding: 2rem;
+  text-align: center;
+  background-color: #F6F5F2;
+  width: 100%; /* antes: 100vw */
+  box-sizing: border-box;
+}
+
+.contactanos h2 {
+  font-family: 'Arial', ArialHebrew-bold;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.contactanos form {
+  max-width: 500px;
+  margin: auto;
+  color: #00008B;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contactanos label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: 600;
+  color: #000;
+  font-family: 'Arial', ArialHebrew-Light;
+}
+
+.contactanos input,
+.contactanos textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  margin-top: 5px;
+  background-color: #fff;
+  color: #000;
+  font-family: 'Arial', ArialHebrew-Light;
+}
+
+.contactanos button {
+  background: #3b82f6;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background .3s, transform .3s;
+  align-self: flex-end;
+  font-family: 'Arial', ArialHebrew-Light;
+}
+
+.contactanos button:hover {
+  background: #10b981;
+  transform: translateY(-5px);
+}
+/* ==== SweetAlert2 Custom Styles ==== */
+/* Fondo del modal */
+.swal2-popup {
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: #fff !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Título */
+.swal2-title {
+  color: #fff !important;
+  font-size: 1.5rem !important;
+  font-weight: bold !important;
+}
+
+/* Texto */
+.swal2-html-container {
+  color: #e0e0e0 !important;
+  font-size: 1rem !important;
+}
+
+/* Botón */
+.swal2-confirm {
+  background-color: #10b981 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  padding: 8px 20px !important;
+  border: none !important;
+}
+.swal2-confirm:hover {
+  background-color: #08b146 !important;
+}
+
+/* Ícono general */
+.swal2-icon {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #10b981 !important;
+}
+
+/* Ícono de éxito */
+.swal2-icon.swal2-success {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #10b981 !important;
+}
+
+/* Quitar completamente las líneas circulares del éxito */
+.swal2-success-circular-line-left,
+.swal2-success-circular-line-right,
+.swal2-success-fix {
+  background: transparent !important;
+  display: none !important;
+}
+
+/* Quitar anillo y sombras */
+.swal2-success-ring {
+  border: none !important;
+  background: transparent !important;
+}
+
+/* Quitar pseudo-elementos oscuros */
+.swal2-icon.swal2-success::before,
+.swal2-icon.swal2-success::after {
+  background: transparent !important;
+  box-shadow: none !important;
+  display: none !important;
+}
+
+/* Mantener solo el check verde */
+.swal2-success-line-tip,
+.swal2-success-line-long {
+  background-color: #10b981 !important;
+}
+
+/* Overlay más sutil */
+.swal2-container {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .inicio {
+    height: 60vh;
+    padding: 20px;
+  }
+
+  .inicio-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .nosotros, .servicios, .myv, .contactanos {
+    padding: 40px 15px;
+  }
+
+  .servicios-grid, .mision-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contactanos form {
+    width: 100%;
+    padding: 15px;
+  }
+}

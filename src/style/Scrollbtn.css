@@ -1,0 +1,32 @@
+.scroll-top {
+  position: fixed;          /* fijo en la pantalla */
+  bottom: 20px;             /* distancia desde abajo */
+  right: 20px;              /* distancia desde la derecha */
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, #3b82f6, #10b981);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;      /* centra vertical */
+  justify-content: center;  /* centra horizontal */
+  opacity: 0;               /* invisible por defecto */
+  pointer-events: none;     /* no clickeable por defecto */
+  transform: translateY(20px); /* inicio abajo para animación */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.scroll-top.show {
+  opacity: 1;               /* visible al hacer scroll */
+  pointer-events: auto;     /* clickeable */
+  transform: translateY(0); /* sube suavemente */
+}
+
+.scroll-top:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #2563eb, #059669); /* cambio suave al hover */
+}
