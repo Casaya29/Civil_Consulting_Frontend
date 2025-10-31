@@ -12,14 +12,13 @@ const resources = {
       "Misión y Visión":"Misión y Visión",
       "Contáctanos":"Contáctanos",
       // Hero
-      "Evaluación y Diseño de Proyectos de Infraestructura y Arquitectura": "Evaluación y Diseño de Proyectos de Infraestructura y Arquitectura",
+      "PROYECTO DE INFRAESTRUCTURA Y ARQUITECTURA": "PROYECTO DE INFRAESTRUCTURA Y ARQUITECTURA",
       "Transformando ideas en realidades tangibles con soluciones innovadoras y sostenibles": "Transformando ideas en realidades tangibles con soluciones innovadoras y sostenibles",
 
       // Nosotros
       "Nuestra empresa": "Nuestra empresa",
-      "Somos especialistas en aplicación de softwares de metodología BIM para la creación y gestión de proyectos de Ingeniería.": "Somos especialistas en aplicación de softwares de metodología BIM para la creación y gestión de proyectos de Ingeniería.",
-      "Aprende todo lo necesario para que tu vida sea más feliz": "Aprende todo lo necesario para que tu vida sea más feliz",
-
+      "Nos especializamos en la Creación y Gestión de Proyectos de : Ingeniería, Infraestructura y Arquitectura.": "Nos especializamos en la Creación y Gestión de Proyectos de : Ingeniería, Infraestructura y Arquitectura.",
+      
       // Servicios
       "Servicios": "Servicios",
       "Diseño Arquitectónico": "Diseño Arquitectónico",
@@ -63,14 +62,13 @@ const resources = {
       "Contáctanos":"Talk to us",
 
       // Hero
-      "Evaluación y Diseño de Proyectos de Infraestructura y Arquitectura": "Evaluation and Design of Infrastructure and Architecture Projects",
+      "PROYECTO DE INFRAESTRUCTURA Y ARQUITECTURA": "INFRASTRUCTURE AND ARCHITECTURE PROJECT",
       "Transformando ideas en realidades tangibles con soluciones innovadoras y sostenibles": "Transforming ideas into tangible realities with innovative and sustainable solutions",
 
       // Nosotros
       "Nuestra empresa": "Our Company",
-      "Somos especialistas en aplicación de softwares de metodología BIM para la creación y gestión de proyectos de Ingeniería.": "We specialize in applying BIM methodology software for the creation and management of engineering projects.",
-      "Aprende todo lo necesario para que tu vida sea más feliz": "Learn everything you need to make your life happier",
-
+      "Nos especializamos en la Creación y Gestión de Proyectos de : Ingeniería, Infraestructura y Arquitectura.": "We specialize in the creation and management of engineering, infrastructure, and architectural projects.",
+      
       // Servicios
       "Servicios": "Services",
       "Diseño Arquitectónico": "Architectural Design",

@@ -1,6 +1,6 @@
 .translate-container {
   position: fixed;
-  bottom: 80px;
+  bottom: 90px;
   right: 20px;
   z-index: 1000;
   display: flex;
@@ -72,3 +72,4 @@
     transform: translateY(0);
   }
 }
+

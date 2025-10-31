@@ -18,7 +18,7 @@
 .navbar-logo {
   font-weight: bold;
   color: #000000;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: 'ArialHebrew-bold', sans-serif;
 }
 
@@ -39,17 +39,12 @@
 .navbar-links li a {
   text-decoration: none;
   font-family: 'ArialHebrew-Light', sans-serif;
-  color: #00008B;
-  transition: color 0.3s;
-  font-family: 'Arial', ArialHebrew-Light;
-}
-.navbar-links li a:hover {
-  transform: translateY(-10px); /* se eleva ligeramente */
-  background: hsla(241, 196, 15, 0.8); /* se hace más opaco */
-  
+  color: #000000;
+  transition: color 0.3s, transform 0.3s;
 }
 
 .navbar-links li a:hover {
+  transform: translateY(-4px);
   color: #007bff;
 }
 
@@ -87,10 +82,9 @@
 @media (max-width: 768px) {
   .navbar {
     justify-content: space-between;
-    padding: 15px 25px;
+    padding: 15px 20px; /* ✅ corregido padding */
   }
 
-  /* Ocultamos los enlaces por defecto */
   .navbar-links {
     position: fixed;
     top: 0;
@@ -106,12 +100,10 @@
     transition: right 0.3s ease;
   }
 
-  /* Cuando está activa, se muestra el menú lateral */
   .navbar-links.active {
     right: 0;
   }
 
-  /* Mostrar botón hamburguesa */
   .hamburger {
     display: flex;
   }
@@ -119,7 +111,6 @@
   .navbar-links li a {
     font-size: 1.2rem;
     color: #00008B;
-    font-family: 'Arial', ArialHebrew-Light;
   }
 
   .navbar-links li a:hover {

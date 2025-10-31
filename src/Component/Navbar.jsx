@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../style/Navbar.css";
-import logo from "../assets/Logo.JPG";
+import logo from "../assets/logoKM.jpg";
 import { useTranslation } from "react-i18next"; // Importa el hook de traducción
 
 function Navbar() {
